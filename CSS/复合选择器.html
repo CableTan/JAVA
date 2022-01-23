@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 5.复合选择器——后代选择器，我想要吧ol标签里面的li标签改变颜色 */
+        /* 6.子选择器 只能选择某一元素最近一级的元素——亲儿子元素*/
+        /* 7.并集选择器 选择多组标签并定义相同的样式_集体声明 */
+        /* 复合选择器使用规范 */
+        ol li a {
+            color: pink;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+
+        /* 子选择器 样式
+        元素1>大于元素2 */
+        .van>a {
+            color: red;
+        }
+
+        /* 并集选择器 用逗号
+        元素1,元素2 */
+        /* div,
+        p {
+            color: green;
+        } */
+        div,
+        p,
+        .pig li {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 复合选择器 -->
+    <ol>
+        <li>同一个父类</li>
+        <li><a href="#">改变颜色目标</a></li>
+    </ol>
+    <ul>
+        <li>其他选项</li>
+        <li>其他选项</li>
+    </ul>
+    <ul class="nav">
+        <li>其他选项</li>
+        <li><a href="#">相同标签名下可以加一个类名区分</a></li>
+    </ul><br>
+    <!-- 子选择器 -->
+    <div class="van">
+        <a href="#">亲儿子</a>
+        <p>
+            <a href="#">孙子</a>
+        </p>
+    </div><br>
+    <!-- 并集选择器 -->
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+    </ul>
+</body>
+
+</html>

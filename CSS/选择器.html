@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        /* 1. 标签选择器，指定标签改动 */
+        /* 2. 类选择器口诀：样式点定义 结构类（class）调用 一个或多个 开发最常用 （姓名）*/
+        /* 3. id选择器的口诀：样式用 # 定义。结构id调用。只能一次，别的标签无法使用 一般和js搭配使用（身份证）*/
+        /* 4. 通配符选择器即 * 吧html body div 等等所有标签都改为了红色 特殊情况使用*/
+
+        p {
+            color: green;
+            /* 注意分号！！修改了文字大小为18像素 */
+            font-size: 18px;
+        }
+
+        #pink {
+            color: pink;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .font35 {
+            font-size: 35px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>标签选择器</p>
+    <ul>
+        <li id="pink">冰雨</li>
+        <li class="blue">雨一直下</li>
+        <li class="font35 blue">海阔天空</li>
+        <li>他不懂</li>
+        <li>朋友</li>
+    </ul>
+    <!-- 多类调用 做一个红蓝红的盒子 -->
+    <div class="box red">红色</div>
+    <div class="box yellow"></div>
+    <div class="box red"></div>
+
+</body>
+
+</html>
