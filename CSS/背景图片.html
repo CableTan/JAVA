@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        div {
+            width: 1500px;
+            height: 1500px;
+
+            /* 111. 不要落下 url() none为无背景图*/
+            /*平铺属性 background-repeat: repeat no-repeat repeat-x repeat-y; */
+            /* 可以同时添加背景颜色和图片，图片会压住颜色 */
+            background-color: blue;
+            background-image: url(image/行内块元素.jpg);
+            background-repeat: no-repeat;
+
+            /* 222. 背景图片位置 方位名词 精确单位 */
+            /* 2.1 方位名词 */
+            /* length 百分数 */
+            /* position top center botton left right等 */
+            /* background-position: center top; */
+            /* background-position: right center; */
+            /* 如果省略一个参数另一个默认center */
+            /* background-position: top; */
+
+            /* 2.2 精确单位 */
+            /* 第一个是x 第二个是y 只写一个另外一个居中对齐 */
+            /* background-position: 50px 10px; */
+
+            /* 2.3混合单位 */
+            /* 混合单位一是x 二是y */
+            background-position: 50px center;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
